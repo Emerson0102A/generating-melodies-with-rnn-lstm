@@ -1,7 +1,13 @@
 import os
 import music21 as m21
+from music21 import *
+
+env = environment.Environment()
+environment.Environment()['musicxmlPath'] = r'D:/software/MuseScore4/bin/MuseScore4.exe'
+environment.Environment()['musescoreDirectPNGPath'] = r'D:/software/MuseScore4/bin/MuseScore4.exe'
 
 KERN_DATASET_PATH = "deutschl/test"
+#KERN_DATASET_PATH = "D:/Github/generating-melodies-with-rnn-lstm/3 - Preprocessing dataset for melody generation pt 1/code/deutschl/test"
 SAVE_DIR = "dataset"
 
 # durations are expressed in quarter length

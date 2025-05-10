@@ -1,10 +1,16 @@
 import os
 import json
 import music21 as m21
+from music21 import *
 import numpy as np
 import tensorflow.keras as keras
 
-KERN_DATASET_PATH = "deutschl/erk"
+env = environment.Environment()
+environment.Environment()['musicxmlPath'] = r'D:/software/MuseScore4/bin/MuseScore4.exe'
+environment.Environment()['musescoreDirectPNGPath'] = r'D:/software/MuseScore4/bin/MuseScore4.exe'
+
+
+KERN_DATASET_PATH = "D:/Github/generating-melodies-with-rnn-lstm/3 - Preprocessing dataset for melody generation pt 1/code/deutschl/erk"
 SAVE_DIR = "dataset"
 SINGLE_FILE_DATASET = "file_dataset"
 MAPPING_PATH = "mapping.json"
